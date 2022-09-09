@@ -1,0 +1,7 @@
+/**
+ * The enum Tipos poderes.
+ */
+public enum TiposPoderes {
+    LEVITACION, RAPIDEZ_SONICA, TELEQUINESIS, TELETRANSPORTACION, ULTRA_RESISTENCIA, VISION_PERFECTA, VUELO, NONE
+
+}
