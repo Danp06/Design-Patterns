@@ -24,41 +24,32 @@ public class Alienigena extends Personajes {
      */
     @Override
     public void doSomething(Personajes x) {
-
+        super.doSomething(x);
     }
 
     /**
-     * @param a
+     * @param a una caracteriztica
      */
     @Override
-    public void Add(Caracterizacion a[]) {
-        tiene = a;
+    public void Add(Caracterizacion[] a) {
+        super.Add(a);
     }
 
     /**
-     * @param a
+     * @param a la liga que perteneze
      */
     @Override
     public void Liga(Ligas a) {
-        liga = a;
+        super.Liga(a);
     }
 
     /**
-     * @param x
-     * @param y
-     * @return
+     * @param x el personaje
+     * @param y el nombre del enemigo
+     * @return El enemigo de dicho personaje
      */
     @Override
     public Personajes Enemigo(Personajes x, String y) {
-        Personajes z = null;
-
-        if (x.liga == Ligas.HEROES || x.liga == Ligas.NEUTRAL) {
-            z = new Alienigena(y, 397, 2.69, 458, 983, Sexo.NONE);
-            z.liga = Ligas.VILLANOS;
-        }else{
-            z = new SuperHumano(y, 35, 1.85, 95, 750, Sexo.MASCULINO);
-            z.liga = Ligas.HEROES;
-        }
-        return z;
+        return super.Enemigo(x, y);
     }
 }

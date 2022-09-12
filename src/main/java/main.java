@@ -8,7 +8,7 @@ public class main {
     /**
      * The Entrada para ingresar datos por consola
      */
-    static Scanner entrada = new Scanner(System.in);
+    static final Scanner entrada = new Scanner(System.in);
     /**
      * The Array Caracte para ingrasar las caracteristicas de un personaje.
      */
@@ -20,9 +20,9 @@ public class main {
          * Declaracion de las variable a usar
          */
         String name;
-        Personajes a = null, b = null, c= null, d=null;
+        Personajes a = null, b = null, d=null;
         Sexo x;
-        Caracterizacion Caracte[] = new Caracterizacion[5];
+        Caracterizacion[] Caracte = new Caracterizacion[5];
 
         /**
          * Creacion de un Humano
@@ -37,7 +37,7 @@ public class main {
         Caracte = new Caracterizacion[Caracte.length];
         a.Liga(Ligas.NEUTRAL);
 
-        System.out.println(a.toString());
+        System.out.println(a);
 
         /**
          * Creacion del Enemigo del Humano que es un Alien
@@ -55,7 +55,7 @@ public class main {
 
         b.Add(Caracte);
         Caracte = new Caracterizacion[Caracte.length];
-        System.out.println(b.toString());
+        System.out.println(b);
 
         /**
          * Creacion del Enemigo del Alien que es el Super Humano
@@ -73,8 +73,6 @@ public class main {
 
         d.Add(Caracte);
         Caracte = new Caracterizacion[Caracte.length];
-        System.out.println(d.toString());
-
-
+        System.out.println(d);
     }
 }

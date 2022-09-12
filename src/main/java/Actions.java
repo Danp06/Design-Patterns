@@ -8,5 +8,5 @@ public interface Actions {
      *
      * @param x the personaje
      */
-    public void doSomething(Personajes x);
+    void doSomething(Personajes x);
 }

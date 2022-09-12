@@ -4,15 +4,15 @@
 public abstract class Caracterizacion implements IFicha {
 
     /**
-     * @param caracteristica
+     * @param caracteristica Es la caracteristica que se va añadir
      */
     @Override
-    public void Add(Caracterizacion caracteristica[]) {
+    public void Add(Caracterizacion[] caracteristica) {
 
     }
 
     /**
-     * @param Liga
+     * @param Liga Es la liga que se va añadir
      */
     @Override
     public void Liga(Ligas Liga) {
@@ -20,9 +20,9 @@ public abstract class Caracterizacion implements IFicha {
     }
 
     /**
-     * @param x
-     * @param y
-     * @return
+     * @param x el personaje
+     * @param y el nombre del enemigo
+     * @return El enemigo de dicho personaje
      */
     @Override
     public Personajes Enemigo(Personajes x, String y) {

@@ -7,14 +7,14 @@ public interface IFicha {
      *
      * @param caracteristica the caracteristica
      */
-    public void Add(Caracterizacion caracteristica[]);
+    void Add(Caracterizacion[] caracteristica);
 
     /**
      * Liga.
      *
      * @param Liga the liga
      */
-    public void Liga(Ligas Liga);
+    void Liga(Ligas Liga);
 
     /**
      * Enemigo personajes.
@@ -23,5 +23,5 @@ public interface IFicha {
      * @param y the y
      * @return the personajes
      */
-    public Personajes Enemigo(Personajes x, String y);
+    Personajes Enemigo(Personajes x, String y);
 }

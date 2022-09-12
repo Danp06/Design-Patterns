@@ -32,11 +32,11 @@ public abstract class Personajes implements Actions, IFicha {
     /**
      * The Liga.
      */
-    public Ligas liga;
+    public Ligas lig;
     /**
      * The Tiene.
      */
-    public Caracterizacion tiene[];
+    public Caracterizacion[] tiene;
 
     /**
      * Instantiates a new Personajes.
@@ -171,16 +171,16 @@ public abstract class Personajes implements Actions, IFicha {
      * @return the liga
      */
     public Ligas getLiga() {
-        return liga;
+        return lig;
     }
 
     /**
      * Sets liga.
      *
-     * @param liga the liga
+     * @param lig the liga
      */
-    public void setLiga(Ligas liga) {
-        this.liga = liga;
+    public void setLiga(Ligas lig) {
+        this.lig = lig;
     }
 
     /**
@@ -224,14 +224,14 @@ public abstract class Personajes implements Actions, IFicha {
      *
      * @param tiene the tiene
      */
-    public void setTiene(Caracterizacion tiene[]) {
+    public void setTiene(Caracterizacion[] tiene) {
         this.tiene = tiene;
     }
 
     @Override
     public String toString() {
         return "Personajes{" + "name='" + name + '\'' + ", edad=" + edad + ", estatura=" + estatura + ", peso="
-                + peso + ", energia=" + energia + ", sexo=" + sexo + ", liga=" + liga + ", tiene="
+                + peso + ", energia=" + energia + ", sexo=" + sexo + ", liga=" + lig + ", tiene="
                 + Arrays.toString(tiene) + '}';
     }
 
@@ -242,6 +242,41 @@ public abstract class Personajes implements Actions, IFicha {
      */
     @Override
     public void doSomething(Personajes x) {
+        // En esta clase se realiza alguna accion
+    }
 
+    /**
+     * @param a una caracteriztica
+     */
+    @Override
+    public void Add(Caracterizacion[] a) {
+        tiene = a;
+    }
+
+    /**
+     * @param a la liga que perteneze
+     */
+    @Override
+    public void Liga(Ligas a) {
+        lig = a;
+    }
+
+    /**
+     * @param x el personaje
+     * @param y el nombre del enemigo
+     * @return El enemigo de dicho personaje
+     */
+    @Override
+    public Personajes Enemigo(Personajes x, String y) {
+        Personajes z = null;
+
+        if (x.lig == Ligas.HEROES || x.lig == Ligas.NEUTRAL) {
+            z = new Alienigena(y, 397, 2.69, 458, 983, Sexo.NONE);
+            z.lig = Ligas.VILLANOS;
+        }else{
+            z = new SuperHumano(y, 35, 1.85, 95, 750, Sexo.MASCULINO);
+            z.lig = Ligas.HEROES;
+        }
+        return z;
     }
 }
