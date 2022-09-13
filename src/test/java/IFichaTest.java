@@ -18,8 +18,8 @@ class IFichaTest {
         Character[1] = new Habilidades(TiposHabilidades.RESISTENCIA);
         Character[2] = new Arma(TiposArmas.ESPADA);
         Character[3] = new Personalidad(TiposPersonalidades.RELAJADO);
-        Caracterizacion z = Character[0];
-        assertEquals(z, z);
+        y.setTiene(Character);
+        assertEquals(y.getTiene(),Character);
     }
 
     /**
@@ -33,8 +33,8 @@ class IFichaTest {
         Character[1] = new Habilidades(TiposHabilidades.RESISTENCIA);
         Character[2] = new Arma(TiposArmas.ESPADA);
         Character[3] = new Personalidad(TiposPersonalidades.RELAJADO);
-        Caracterizacion z = Character[2];
-        assertEquals(z, z);
+        y.setTiene(Character);
+        assertEquals(y.getTiene(),Character);
     }
 
     /**
@@ -48,8 +48,8 @@ class IFichaTest {
         Character[1] = new Debilidades(TiposDebilidades.VENENO);
         Character[2] = new Arma(TiposArmas.ESPADA);
         Character[3] = new Personalidad(TiposPersonalidades.RELAJADO);
-        Caracterizacion z = Character[1];
-        assertEquals(z, z);
+        y.setTiene(Character);
+        assertEquals(y.getTiene(),Character);
     }
 
     /**
@@ -63,8 +63,8 @@ class IFichaTest {
         Character[1] = new Habilidades(TiposHabilidades.RESISTENCIA);
         Character[2] = new Arma(TiposArmas.ESPADA);
         Character[3] = new Personalidad(TiposPersonalidades.RELAJADO);
-        Caracterizacion z = Character[3];
-        assertEquals(z, z);
+        y.setTiene(Character);
+        assertEquals(y.getTiene(),Character);
     }
 
     /**
@@ -78,8 +78,8 @@ class IFichaTest {
         Character[1] = new Poderes(TiposPoderes.RAPIDEZ_SONICA);
         Character[2] = new Arma(TiposArmas.ESPADA);
         Character[3] = new Personalidad(TiposPersonalidades.RELAJADO);
-        Caracterizacion z = Character[2];
-        assertEquals(z, z);
+        y.setTiene(Character);
+        assertEquals(y.getTiene(),Character);
     }
 
     /**
@@ -119,10 +119,9 @@ class IFichaTest {
     void enemigo1() {
         Personajes x = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.NEUTRAL);
-        Personajes y = new Alienigena("Algo", 397, 2.69, 458, 983, Sexo.NONE);
-        y.Liga(Ligas.VILLANOS);
-        Personajes z = y.Enemigo(x, "Algo");
-        assertEquals(z, z);
+        Personajes y = x.Enemigo(x, "Algo");
+        Personajes z = y;
+        assertEquals(z, y);
     }
 
     /**
@@ -132,10 +131,9 @@ class IFichaTest {
     void enemigo2() {
         Personajes x = new SuperHumano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.HEROES);
-        Personajes y = new Alienigena("Algo", 397, 2.69, 458, 983, Sexo.NONE);
-        y.Liga(Ligas.VILLANOS);
-        Personajes z = y.Enemigo(x, "Algo");
-        assertEquals(z, z);
+        Personajes y = x.Enemigo(x, "Algo");
+        Personajes z = y;
+        assertEquals(z, y);
     }
 
     /**
@@ -145,10 +143,9 @@ class IFichaTest {
     void enemigo3() {
         Personajes x = new SuperHumano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.NEUTRAL);
-        Personajes y = new Alienigena("Algo", 397, 2.69, 458, 983, Sexo.NONE);
-        y.Liga(Ligas.VILLANOS);
-        Personajes z = y.Enemigo(x, "Algo");
-        assertEquals(z, z);
+        Personajes y = x.Enemigo(x, "Algo");
+        Personajes z = y;
+        assertEquals(z, y);
     }
 
     /**
@@ -158,9 +155,8 @@ class IFichaTest {
     void enemigo4() {
         Personajes x = new Alienigena("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.VILLANOS);
-        Personajes y = new SuperHumano("Algo", 397, 2.69, 458, 983, Sexo.NONE);
-        y.Liga(Ligas.HEROES);
-        Personajes z = y.Enemigo(x, "Algo");
-        assertEquals(z, z);
+        Personajes y = x.Enemigo(x, "Algo");
+        Personajes z = y;
+        assertEquals(z, y);
     }
 }
