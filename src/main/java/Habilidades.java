@@ -16,22 +16,4 @@ public class Habilidades extends Caracterizacion {
     public Habilidades(TiposHabilidades habilidad) {
         this.habilidad = habilidad;
     }
-
-    /**
-     * Gets habilidad.
-     *
-     * @return the habilidad
-     */
-    public TiposHabilidades getHabilidad() {
-        return habilidad;
-    }
-
-    /**
-     * Sets habilidad.
-     *
-     * @param habilidad the habilidad
-     */
-    public void setHabilidad(TiposHabilidades habilidad) {
-        this.habilidad = habilidad;
-    }
 }

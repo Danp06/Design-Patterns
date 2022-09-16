@@ -1,17 +1,17 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * The type Ficha test.
  */
-class IFichaTest {
+public class IFichaTest {
 
     /**
      * Addhabilidad test.
      */
     @Test
-    void add1() {
+    public void add1() {
         Caracterizacion[] Character = new Caracterizacion[4];
         Personajes y = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         Character[0] = new Habilidades(TiposHabilidades.FUERZA_VOLUNTAD);
@@ -26,7 +26,7 @@ class IFichaTest {
      * Addarma test.
      */
     @Test
-    void add2() {
+    public void add2() {
         Caracterizacion[] Character = new Caracterizacion[4];
         Personajes y = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         Character[0] = new Habilidades(TiposHabilidades.FUERZA_VOLUNTAD);
@@ -41,7 +41,7 @@ class IFichaTest {
      * Adddebilidades test.
      */
     @Test
-    void add3() {
+    public void add3() {
         Caracterizacion[] Character = new Caracterizacion[4];
         Personajes y = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         Character[0] = new Habilidades(TiposHabilidades.FUERZA_VOLUNTAD);
@@ -56,7 +56,7 @@ class IFichaTest {
      * Addpersonalidad test.
      */
     @Test
-    void add4() {
+    public void add4() {
         Caracterizacion[] Character = new Caracterizacion[4];
         Personajes y = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         Character[0] = new Habilidades(TiposHabilidades.FUERZA_VOLUNTAD);
@@ -71,7 +71,7 @@ class IFichaTest {
      * Addpoderes test.
      */
     @Test
-    void add5() {
+    public void add5() {
         Caracterizacion[] Character = new Caracterizacion[4];
         Personajes y = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         Character[0] = new Habilidades(TiposHabilidades.FUERZA_VOLUNTAD);
@@ -86,7 +86,7 @@ class IFichaTest {
      * Liganeutral test.
      */
     @Test
-    void liga1() {
+    public void liga1() {
         Personajes x = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.NEUTRAL);
         assertEquals(Ligas.NEUTRAL, x.getLiga());
@@ -96,7 +96,7 @@ class IFichaTest {
      * Ligaheroe test.
      */
     @Test
-    void liga2() {
+    public void liga2() {
         Personajes x = new Artificial("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.HEROES);
         assertEquals(Ligas.HEROES, x.getLiga());
@@ -106,7 +106,7 @@ class IFichaTest {
      * Ligavillano test.
      */
     @Test
-    void liga3() {
+    public void liga3() {
         Personajes x = new Alienigena("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.VILLANOS);
         assertEquals(Ligas.VILLANOS, x.getLiga());
@@ -116,7 +116,7 @@ class IFichaTest {
      * Enemigohumanos test.
      */
     @Test
-    void enemigo1() {
+    public void enemigo1() {
         Personajes x = new Humano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.NEUTRAL);
         Personajes y = x.Enemigo(x, "Algo");
@@ -128,7 +128,7 @@ class IFichaTest {
      * Enemigosuperhumanos test.
      */
     @Test
-    void enemigo2() {
+    public void enemigo2() {
         Personajes x = new SuperHumano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.HEROES);
         Personajes y = x.Enemigo(x, "Algo");
@@ -140,7 +140,7 @@ class IFichaTest {
      * Enemigoartificia test.
      */
     @Test
-    void enemigo3() {
+    public void enemigo3() {
         Personajes x = new SuperHumano("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.NEUTRAL);
         Personajes y = x.Enemigo(x, "Algo");
@@ -152,7 +152,7 @@ class IFichaTest {
      * Enemigoalienigena test.
      */
     @Test
-    void enemigo4() {
+    public void enemigo4() {
         Personajes x = new Alienigena("Daniel", 20, 1.75, 70, 650, Sexo.MASCULINO);
         x.Liga(Ligas.VILLANOS);
         Personajes y = x.Enemigo(x, "Algo");

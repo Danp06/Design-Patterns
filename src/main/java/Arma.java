@@ -16,22 +16,4 @@ public class Arma extends Caracterizacion {
     public Arma(TiposArmas arma) {
         this.arma = arma;
     }
-
-    /**
-     * Gets arma.
-     *
-     * @return the arma
-     */
-    public TiposArmas getArma() {
-        return arma;
-    }
-
-    /**
-     * Sets arma.
-     *
-     * @param arma the arma
-     */
-    public void setArma(TiposArmas arma) {
-        this.arma = arma;
-    }
 }

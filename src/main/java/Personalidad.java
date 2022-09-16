@@ -16,22 +16,4 @@ public class Personalidad extends Caracterizacion {
     public Personalidad(TiposPersonalidades personalidad) {
         this.personalidad = personalidad;
     }
-
-    /**
-     * Gets personalidad.
-     *
-     * @return the personalidad
-     */
-    public TiposPersonalidades getPersonalidad() {
-        return personalidad;
-    }
-
-    /**
-     * Sets personalidad.
-     *
-     * @param personalidad the personalidad
-     */
-    public void setPersonalidad(TiposPersonalidades personalidad) {
-        this.personalidad = personalidad;
-    }
 }
