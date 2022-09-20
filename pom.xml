@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>LaNuevaLiga</artifactId>
+    <artifactId>dp_2p2022_t00059772_p1</artifactId>
     <version>1.0</version>
-    <name>LaNuevaLiga</name>
+    <name>dp_2p2022_t00059772_p1</name>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
