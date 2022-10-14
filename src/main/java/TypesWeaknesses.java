@@ -1,0 +1,4 @@
+public enum TypesWeaknesses {
+    STEEL, WATER, ARACHNIDS, FIRE, INSECTS, OZONE, PLANTS, LIGHTNING, POISON, NONE
+
+}

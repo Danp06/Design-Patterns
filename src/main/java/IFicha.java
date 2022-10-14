@@ -5,23 +5,24 @@ public interface IFicha {
     /**
      * Add.
      *
-     * @param caracteristica the caracteristica
+     * @param x the features
+     * @return the features
      */
-    void Add(Caracterizacion[] caracteristica);
+    Features Add(Features x);
 
     /**
      * Liga.
      *
-     * @param Liga the liga
+     * @param x the liga
+     * @return the league
      */
-    void Liga(Ligas Liga);
+     Leagues League(Leagues x);
 
     /**
      * Enemigo personajes.
      *
      * @param x the x
-     * @param y the y
      * @return the personajes
      */
-    Personajes Enemigo(Personajes x, String y);
+    CharacterBuilder Enemy(CharacterBuilder x);
 }

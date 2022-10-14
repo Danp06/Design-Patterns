@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LaNuevaLiga" />
+        <module name="dp_2p2022_t00059772_p1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dp_2p2022_t00059772_p1" target="11" />
       <module name="LaNuevaLiga" target="11" />
     </bytecodeTargetLevel>
   </component>

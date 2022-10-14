@@ -1,0 +1,7 @@
+/**
+ * The enum Tipos habilidades.
+ */
+public enum TypesSkills {
+    CHARISMA, DEXTERITY, EMPATHY, CHARM, STRENGTH_OF_WILL, INTELLECT, PERCEPTION, SPEED, ENDURANCE, WISDOM, LUCK, VITALITY, NONE
+
+}
