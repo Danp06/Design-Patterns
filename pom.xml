@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>iscodevutb</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.exclucions>**/Cliente*.java</sonar.exclucions>
+        <sonar.exclucions>**/Client*.java</sonar.exclucions>
     </properties>
 
     <dependencies>
