@@ -34,10 +34,6 @@ public class Character{
         return league;
     }
 
-    public Features getHas() {
-        return has;
-    }
-
     public Character() {
     }
 

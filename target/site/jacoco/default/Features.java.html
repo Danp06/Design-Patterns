@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Features.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">dp_2p2022_t00059772_p1</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Features.java</span></div><h1>Features.java</h1><pre class="source lang-java linenums">import java.util.Arrays;
+
+public class Features{
+
+    private TypesSkills[] skills;
+    private TypesPowers[] powers;
+    private TypesPersonalities[] personalities;
+    private TypesWeapons[] weapons;
+    private TypesWeaknesses[] weaknesses;
+
+<span class="fc" id="L11">    public Features() {</span>
+<span class="fc" id="L12">    }</span>
+
+    public Features skills(TypesSkills[] skills){
+<span class="fc" id="L15">        this.skills = skills;</span>
+<span class="fc" id="L16">        return this;</span>
+    }
+
+    public Features powers(TypesPowers[] powers){
+<span class="fc" id="L20">        this.powers = powers;</span>
+<span class="fc" id="L21">        return this;</span>
+    }
+
+    public Features personalities(TypesPersonalities[] personalities){
+<span class="fc" id="L25">        this.personalities = personalities;</span>
+<span class="fc" id="L26">        return this;</span>
+    }
+
+    public Features weapons(TypesWeapons[] weapons){
+<span class="fc" id="L30">        this.weapons = weapons;</span>
+<span class="fc" id="L31">        return this;</span>
+    }
+
+    public Features weakness(TypesWeaknesses[] weaknesses){
+<span class="fc" id="L35">        this.weaknesses = weaknesses;</span>
+<span class="fc" id="L36">        return this;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L41">        return &quot;Features{&quot; +</span>
+<span class="fc" id="L42">                &quot;skills=&quot; + Arrays.toString(skills) +</span>
+<span class="fc" id="L43">                &quot;, powers=&quot; + Arrays.toString(powers) +</span>
+<span class="fc" id="L44">                &quot;, personalities=&quot; + Arrays.toString(personalities) +</span>
+<span class="fc" id="L45">                &quot;, weapons=&quot; + Arrays.toString(weapons) +</span>
+<span class="fc" id="L46">                &quot;, weaknesses=&quot; + Arrays.toString(weaknesses) +</span>
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -11,26 +11,6 @@ public class Features{
     public Features() {
     }
 
-    public TypesSkills[] getSkills() {
-        return skills;
-    }
-
-    public TypesPowers[] getPowers() {
-        return powers;
-    }
-
-    public TypesPersonalities[] getPersonalities() {
-        return personalities;
-    }
-
-    public TypesWeapons[] getWeapons() {
-        return weapons;
-    }
-
-    public TypesWeaknesses[] getWeaknesses() {
-        return weaknesses;
-    }
-
     public Features skills(TypesSkills[] skills){
         this.skills = skills;
         return this;
