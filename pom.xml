@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>iscodevutb</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.exclusions>**/Client*.java</sonar.exclusions>
+        <sonar.exclusions>**/ShoppingCartClient*.java</sonar.exclusions>
     </properties>
 
     <dependencies>
@@ -41,7 +41,7 @@
                 <version>0.8.8</version>
                 <configuration>
                     <excludes>
-                        <exclude>Client.class</exclude>
+                        <exclude>ShoppingCartClient.class</exclude>
                     </excludes>
                 </configuration>
                 <executions>
