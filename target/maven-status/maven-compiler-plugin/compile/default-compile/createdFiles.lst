@@ -3,6 +3,7 @@ Medicaments.class
 FastFood.class
 ShoppingCartClient.class
 AlcoholicDrinks.class
-ShoppingCartVisitorImpl.class
+ShoppingCartVisitorRappi.class
 ShoppingCartVisitor.class
 Book.class
+ShoppingCartVisitorDiDi.class

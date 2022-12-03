@@ -4,7 +4,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ShoppingCartVisitorImplTest {
+public class ShoppingCartVisitorRappiTest {
 
     Book book = new Book("El principito","ABC1123",125000);
     Book book2 = new Book("El principito","ABC1123",25000);
@@ -15,7 +15,7 @@ public class ShoppingCartVisitorImplTest {
 
     @Test
     public void visit() {
-        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         book.getName();
         book.getIsbnNumber();
         float Result = book.accept(visitor);
@@ -24,7 +24,7 @@ public class ShoppingCartVisitorImplTest {
 
     @Test
     public void visit5() {
-        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         book2.getName();
         book2.getIsbnNumber();
         float Result = book2.accept(visitor);
@@ -33,7 +33,7 @@ public class ShoppingCartVisitorImplTest {
 
     @Test
     public void visit1() {
-        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         alcoholicDrinks.getName();
         float Result = alcoholicDrinks.accept(visitor);
         assertEquals(alcoholicDrinks.getPrice(),Result);
@@ -41,7 +41,7 @@ public class ShoppingCartVisitorImplTest {
 
     @Test
     public void visit12() {
-        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         alcoholicDrinks.getName();
         float Result = alcoholicDrinks3.accept(visitor);
         assertEquals(alcoholicDrinks3.getPrice()*(1-0.1),Result);
@@ -49,7 +49,7 @@ public class ShoppingCartVisitorImplTest {
 
     @Test
     public void visit2() {
-        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         medicaments.getName();
         medicaments.getExpirationDate();
         medicaments.getExpirationDate();
@@ -59,7 +59,7 @@ public class ShoppingCartVisitorImplTest {
 
     @Test
     public void visit3() {
-        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         float Result = fastFood.accept(visitor);
         fastFood.getName();
         assertEquals(fastFood.getPrice(),Result);

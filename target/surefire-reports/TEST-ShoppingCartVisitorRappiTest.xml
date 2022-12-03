@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="ShoppingCartVisitorImplTest" time="0.088" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="ShoppingCartVisitorRappiTest" time="0.031" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="18.0.2.1+1-1"/>
@@ -27,7 +27,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\maven\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\danie\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.2\bin;;C:\Program Files\JetBrains\PyCharm 2022.2.2\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\maven\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\danie\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.2\bin;;C:\Program Files\JetBrains\PyCharm 2022.2.2\bin;;C:\Users\danie\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="maven.conf" value="C:\maven/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="62.0"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\maven\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-18.0.2.1"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,10 +61,10 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="ShoppingCartVisitorImplTest" name="visit1" time="0.039"/>
-  <testcase classname="ShoppingCartVisitorImplTest" name="visit2" time="0.042"/>
-  <testcase classname="ShoppingCartVisitorImplTest" name="visit3" time="0.001"/>
-  <testcase classname="ShoppingCartVisitorImplTest" name="visit5" time="0.005"/>
-  <testcase classname="ShoppingCartVisitorImplTest" name="visit" time="0.001"/>
-  <testcase classname="ShoppingCartVisitorImplTest" name="visit12" time="0"/>
+  <testcase classname="ShoppingCartVisitorRappiTest" name="visit1" time="0.001"/>
+  <testcase classname="ShoppingCartVisitorRappiTest" name="visit2" time="0.021"/>
+  <testcase classname="ShoppingCartVisitorRappiTest" name="visit3" time="0.002"/>
+  <testcase classname="ShoppingCartVisitorRappiTest" name="visit5" time="0.005"/>
+  <testcase classname="ShoppingCartVisitorRappiTest" name="visit" time="0.001"/>
+  <testcase classname="ShoppingCartVisitorRappiTest" name="visit12" time="0.001"/>
 </testsuite>
