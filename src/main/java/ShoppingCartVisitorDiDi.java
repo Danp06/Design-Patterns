@@ -4,21 +4,6 @@ import java.util.logging.Logger;
 public class ShoppingCartVisitorDiDi implements ShoppingCartVisitor {
 
     private static Logger logger = Logger.getLogger(ShoppingCartVisitorDiDi.class.getName());
-    @Override
-    public float visit(Book book) {
-        return 0;
-    }
-
-    @Override
-    public float visit(AlcoholicDrinks drinks) {
-        float cost = 0;
-        //apply 10% discount if price is greater than 250000
-        if (drinks.getPrice() > 250000) {
-            cost = (float) (drinks.getPrice() * (1 - 0.1));
-        } else cost = drinks.getPrice();
-        logger.log(Level.INFO,"Name: " + drinks.getName() + " - cost: " + cost);
-        return cost;
-    }
 
     @Override
     public float visit(Medicaments medicaments) {
@@ -26,14 +11,32 @@ public class ShoppingCartVisitorDiDi implements ShoppingCartVisitor {
     }
 
     @Override
+    public float visit(Book book) {
+        return 0;
+    }
+
+    @Override
     public float visit(FastFood fastFood) {
         float cost = fastFood.getPrice();
-        //apply 10% discount if price is greater than 100000
-        if (fastFood.getPrice() > 75000) {
-            cost = (float) (fastFood.getPrice() * (1 - 0.075));
-        } else cost = fastFood.getPrice();
-        logger.log(Level.INFO,"Name: " + fastFood.getName() + " - cost :" + cost);
+        //apply 7.5% discount if price is greater than 75000
+        if (fastFood.getPrice() > 75000) {cost = cost-discount(cost, 7.5f);}
+        logger.log(Level.INFO,"\n\tName: " + fastFood.getName() + " - price: " + fastFood.getPrice()
+                + " - Final Price: " + cost);
         return cost;
     }
 
+    @Override
+    public float visit(AlcoholicDrinks drinks) {
+        float cost = drinks.getPrice();
+        //apply 10% discount if price is greater than 250000
+        if (drinks.getPrice() > 250000) {cost = cost-discount(cost,10);}
+        logger.log(Level.INFO,"\n\tName: " + drinks.getName() + " - price: " + drinks.getPrice()
+                + " - Final Price: " + cost);
+        return cost;
+    }
+
+    @Override
+    public float discount(float price, float discount_Percentage) {
+        return (price*discount_Percentage)/100;
+    }
 }

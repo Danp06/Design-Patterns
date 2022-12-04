@@ -2,19 +2,19 @@ import java.util.Date;
 
 public class Medicaments implements ItemElement {
 
-    private String name, scientistName;
+    private String name, scientist_Name;
     private float price;
     private Date expirationDate;
 
     /**
      * @param name name
-     * @param scientistName scientistName
+     * @param scientist_Name scientist_Name
      * @param price price
      * @param expirationDate expirationDate
      */
-    public Medicaments(String name, String scientistName, float price, Date expirationDate) {
+    public Medicaments(String name, String scientist_Name, float price, Date expirationDate) {
         this.name = name;
-        this.scientistName = scientistName;
+        this.scientist_Name = scientist_Name;
         this.price = price;
         this.expirationDate = expirationDate;
     }
@@ -29,8 +29,8 @@ public class Medicaments implements ItemElement {
     /**
      * @return ScientistName
      */
-    public String getScientistName() {
-        return scientistName;
+    public String getScientist_Name() {
+        return scientist_Name;
     }
 
     /**

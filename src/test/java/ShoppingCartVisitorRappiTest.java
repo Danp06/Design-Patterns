@@ -17,7 +17,7 @@ public class ShoppingCartVisitorRappiTest {
     public void visit() {
         ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         book.getName();
-        book.getIsbnNumber();
+        book.getIsbn_Number();
         float Result = book.accept(visitor);
         assertEquals(book.getPrice()*(1-0.1),Result);
     }
@@ -26,7 +26,7 @@ public class ShoppingCartVisitorRappiTest {
     public void visit5() {
         ShoppingCartVisitor visitor = new ShoppingCartVisitorRappi();
         book2.getName();
-        book2.getIsbnNumber();
+        book2.getIsbn_Number();
         float Result = book2.accept(visitor);
         assertEquals(book2.getPrice(),Result);
     }

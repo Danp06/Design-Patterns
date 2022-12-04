@@ -1,16 +1,16 @@
 public class Book implements ItemElement {
 
-    private String name, isbnNumber;
+    private String name, isbn_Number;
     private float price;
 
     /**
      * @param name name
-     * @param isbnNumber isbnNumber
+     * @param isbnNumber isbn_Number
      * @param price price
      */
     public Book(String name, String isbnNumber, float price) {
         this.name = name;
-        this.isbnNumber = isbnNumber;
+        this.isbn_Number = isbnNumber;
         this.price = price;
     }
 
@@ -31,8 +31,8 @@ public class Book implements ItemElement {
     /**
      * @return isbn
      */
-    public String getIsbnNumber() {
-        return isbnNumber;
+    public String getIsbn_Number() {
+        return isbn_Number;
     }
 
     /**
